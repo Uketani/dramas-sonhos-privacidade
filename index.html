@@ -1,90 +1,328 @@
-# Política de Privacidade — Dramas Sonhos
 
-**Última atualização:** 20 de outubro de 2026
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de Privacidade do aplicativo Dramas Sonhos. Saiba como tratamos, armazenamos e protegemos seus dados.">
+  <meta name="theme-color" content="#171322">
+  <title>Política de Privacidade | Dramas Sonhos</title>
 
-## 1. Introdução
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #100d18;
+      --surface: #1b1726;
+      --text: #f5f1fa;
+      --muted: #bdb5ca;
+      --accent: #d6a4ff;
+      --border: #352c45;
+    }
 
-Esta Política de Privacidade explica como o aplicativo Dramas Sonhos coleta, utiliza, armazena e protege informações relacionadas aos seus usuários.
+    * {
+      box-sizing: border-box;
+    }
 
-O Dramas Sonhos disponibiliza séries e episódios em vídeo. Ao utilizar o aplicativo, você deve ler esta política para compreender como seus dados são tratados.
+    html {
+      scroll-behavior: smooth;
+    }
 
-## 2. Informações tratadas
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
 
-Para oferecer os recursos do aplicativo, podemos tratar as seguintes informações:
+    header {
+      padding: 48px 20px 38px;
+      text-align: center;
+      background: linear-gradient(145deg, #241638, #171322 75%);
+      border-bottom: 1px solid var(--border);
+    }
 
-- **Dados de conta:** informações necessárias para cadastro, autenticação e gerenciamento da conta.
-- **Histórico de reprodução:** informações sobre o progresso dos episódios, incluindo posição do vídeo, duração e data da última atualização, para permitir a continuidade da reprodução.
-- **Identificador de sessão da instalação:** identificador aleatório utilizado para gerenciar a sessão do aplicativo e aplicar controles de acesso por instalação.
-- **Dados técnicos:** informações necessárias ao funcionamento, à segurança e ao diagnóstico de erros, conforme os serviços utilizados.
+    .brand {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
 
-Não informe dados pessoais desnecessários em campos de cadastro ou em comunicações com o suporte.
+    header h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.25;
+    }
 
-## 3. Como utilizamos as informações
+    .updated {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-As informações são utilizadas para:
+    main {
+      width: min(100% - 32px, 820px);
+      margin: 36px auto 56px;
+      padding: clamp(22px, 5vw, 44px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    }
 
-- criar e autenticar contas;
-- manter o acesso à conta e gerenciar sessões;
-- disponibilizar o catálogo e os episódios autorizados;
-- salvar o progresso de reprodução;
-- proteger o acesso aos vídeos e aos recursos administrativos;
-- exibir anúncios, quando aplicável;
-- responder a solicitações de suporte, privacidade e exclusão de conta.
+    section + section {
+      margin-top: 34px;
+      padding-top: 26px;
+      border-top: 1px solid var(--border);
+    }
 
-## 4. Serviços de terceiros
+    h2 {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 21px;
+      line-height: 1.4;
+    }
 
-O funcionamento do aplicativo utiliza serviços de terceiros, que podem processar informações conforme suas próprias políticas e configurações:
+    p {
+      margin: 0 0 14px;
+    }
 
-- **Firebase Authentication e Cloud Firestore:** autenticação, gerenciamento de dados da conta, catálogo e histórico de reprodução.
-- **Cloudflare R2 e Cloudflare Workers:** armazenamento e entrega dos vídeos, com controle de acesso ao conteúdo.
-- **Google AdMob:** exibição e gerenciamento de anúncios.
+    ul {
+      padding-left: 24px;
+      margin: 12px 0 18px;
+    }
 
-Esses serviços possuem políticas de privacidade próprias. O tratamento realizado por cada fornecedor depende dos recursos efetivamente utilizados e de suas configurações.
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
 
-## 5. Anúncios
+    strong {
+      color: #fff;
+    }
 
-O aplicativo pode exibir anúncios fornecidos pelo Google AdMob. O Google e seus parceiros podem tratar identificadores de publicidade, informações do dispositivo e dados de interação com anúncios, conforme a configuração do serviço e as permissões aplicáveis.
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
 
-Para saber mais, consulte a [Política de Privacidade do Google](https://policies.google.com/privacy).
+    a:hover {
+      color: #ead5ff;
+    }
 
-## 6. Armazenamento e segurança
+    .contact {
+      padding: 20px;
+      background: #241c32;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
 
-Adotamos medidas técnicas destinadas a proteger as informações e restringir o acesso aos dados de acordo com as permissões aplicáveis.
+    footer {
+      padding: 24px 16px 32px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
 
-Os dados podem ser armazenados ou processados pela infraestrutura dos fornecedores mencionados nesta política. Nenhum sistema pode garantir segurança absoluta.
+    @media (max-width: 480px) {
+      header {
+        padding: 36px 18px 30px;
+      }
 
-## 7. Compartilhamento de informações
+      main {
+        width: calc(100% - 20px);
+        margin: 20px auto 32px;
+        padding: 22px 18px;
+        border-radius: 12px;
+      }
 
-Não comercializamos dados pessoais dos usuários. As informações podem ser processadas pelos fornecedores necessários à operação do aplicativo, para atender obrigações legais ou para proteger direitos e a segurança do serviço.
+      h2 {
+        font-size: 19px;
+      }
+    }
+  </style>
+</head>
 
-Qualquer compartilhamento adicional deverá observar a legislação aplicável.
+<body>
+  <header>
+    <p class="brand">Dramas Sonhos</p>
+    <h1>Política de Privacidade</h1>
+    <p class="updated">
+      Última atualização: 20 de outubro de 2026
+    </p>
+  </header>
 
-## 8. Exclusão da conta e dos dados
+  <main>
+    <section>
+      <h2>1. Introdução</h2>
+      <p>
+        Esta Política de Privacidade explica como o aplicativo Dramas Sonhos
+        coleta, utiliza, armazena e protege informações relacionadas aos
+        seus usuários.
+      </p>
+      <p>
+        O Dramas Sonhos disponibiliza séries e episódios em vídeo. Ao
+        utilizar o aplicativo, você deve ler esta política para compreender
+        como seus dados são tratados.
+      </p>
+    </section>
 
-Você pode solicitar a exclusão da sua conta por meio da opção disponibilizada nas configurações do aplicativo ou pela página pública de solicitação de exclusão de conta, quando disponível.
+    <section>
+      <h2>2. Informações tratadas</h2>
+      <p>Para oferecer os recursos do aplicativo, podemos tratar as seguintes informações:</p>
+      <ul>
+        <li><strong>Dados de conta:</strong> informações necessárias para cadastro, autenticação e gerenciamento da conta.</li>
+        <li><strong>Histórico de reprodução:</strong> informações sobre o progresso dos episódios, incluindo posição do vídeo, duração e data da última atualização, para permitir a continuidade da reprodução.</li>
+        <li><strong>Identificador de sessão da instalação:</strong> identificador aleatório utilizado para gerenciar a sessão do aplicativo e aplicar controles de acesso por instalação.</li>
+        <li><strong>Dados técnicos:</strong> informações necessárias ao funcionamento, à segurança e ao diagnóstico de erros, conforme os serviços utilizados.</li>
+      </ul>
+      <p>Não informe dados pessoais desnecessários em campos de cadastro ou em comunicações com o suporte.</p>
+    </section>
 
-A exclusão será processada conforme os procedimentos do serviço. Dados associados à conta serão excluídos ou desvinculados quando aplicável, ressalvadas informações cuja conservação seja necessária para cumprir obrigações legais, resolver disputas, prevenir fraudes ou proteger a segurança do serviço.
+    <section>
+      <h2>3. Como utilizamos as informações</h2>
+      <p>As informações são utilizadas para:</p>
+      <ul>
+        <li>Criar e autenticar contas;</li>
+        <li>Manter o acesso à conta e gerenciar sessões;</li>
+        <li>Disponibilizar o catálogo e os episódios autorizados;</li>
+        <li>Salvar o progresso de reprodução;</li>
+        <li>Proteger o acesso aos vídeos e aos recursos administrativos;</li>
+        <li>Exibir anúncios, quando aplicável;</li>
+        <li>Responder a solicitações de suporte, privacidade e exclusão de conta.</li>
+      </ul>
+    </section>
 
-Para solicitar ajuda com a exclusão ou esclarecer dúvidas sobre os dados, entre em contato pelo e-mail **suporte.dramasonhos@gmail.com**.
+    <section>
+      <h2>4. Serviços de terceiros</h2>
+      <p>O funcionamento do aplicativo utiliza serviços de terceiros, que podem processar informações conforme suas próprias políticas e configurações:</p>
+      <ul>
+        <li><strong>Firebase Authentication e Cloud Firestore:</strong> autenticação, gerenciamento de dados da conta, catálogo e histórico de reprodução.</li>
+        <li><strong>Cloudflare R2 e Cloudflare Workers:</strong> armazenamento e entrega dos vídeos, com controle de acesso ao conteúdo.</li>
+        <li><strong>Google AdMob:</strong> exibição e gerenciamento de anúncios.</li>
+      </ul>
+      <p>Esses serviços possuem políticas de privacidade próprias. O tratamento realizado por cada fornecedor depende dos recursos efetivamente utilizados e de suas configurações.</p>
+    </section>
 
-## 9. Direitos dos titulares
+    <section>
+      <h2>5. Anúncios</h2>
+      <p>
+        O aplicativo pode exibir anúncios fornecidos pelo Google AdMob.
+        O Google e seus parceiros podem tratar identificadores de publicidade,
+        informações do dispositivo e dados de interação com anúncios, conforme
+        a configuração do serviço e as permissões aplicáveis.
+      </p>
+      <p>
+        Para saber mais, consulte a
+        <a href="https://policies.google.com/privacy"
+           target="_blank"
+           rel="noopener noreferrer">Política de Privacidade do Google</a>.
+      </p>
+    </section>
 
-Nos termos da legislação aplicável, incluindo a Lei Geral de Proteção de Dados Pessoais (LGPD), você pode solicitar, conforme o caso, confirmação do tratamento, acesso, correção, informações sobre compartilhamento, eliminação ou outras providências previstas em lei.
+    <section>
+      <h2>6. Armazenamento e segurança</h2>
+      <p>
+        Adotamos medidas técnicas destinadas a proteger as informações e
+        restringir o acesso aos dados de acordo com as permissões aplicáveis.
+      </p>
+      <p>
+        Os dados podem ser armazenados ou processados pela infraestrutura
+        dos fornecedores mencionados nesta política. Nenhum sistema pode
+        garantir segurança absoluta.
+      </p>
+    </section>
 
-Para exercer seus direitos, escreva para **suporte.dramasonhos@gmail.com**. Podemos solicitar informações razoáveis para confirmar a titularidade da conta antes de atender à solicitação.
+    <section>
+      <h2>7. Compartilhamento de informações</h2>
+      <p>
+        Não comercializamos dados pessoais dos usuários. As informações
+        podem ser processadas pelos fornecedores necessários à operação
+        do aplicativo, para atender obrigações legais ou para proteger
+        direitos e a segurança do serviço.
+      </p>
+      <p>Qualquer compartilhamento adicional deverá observar a legislação aplicável.</p>
+    </section>
 
-## 10. Privacidade de crianças e adolescentes
+    <section>
+      <h2>8. Exclusão da conta e dos dados</h2>
+      <p>
+        Você pode solicitar a exclusão da sua conta por meio da opção
+        disponibilizada nas configurações do aplicativo ou pela página
+        pública de solicitação de exclusão de conta, quando disponível.
+      </p>
+      <p>
+        A exclusão será processada conforme os procedimentos do serviço.
+        Dados associados à conta serão excluídos ou desvinculados quando
+        aplicável, ressalvadas informações cuja conservação seja necessária
+        para cumprir obrigações legais, resolver disputas, prevenir fraudes
+        ou proteger a segurança do serviço.
+      </p>
+      <p>
+        Para solicitar ajuda com a exclusão ou esclarecer dúvidas sobre os
+        dados, entre em contato pelo e-mail
+        <a href="mailto:suporte.dramasonhos@gmail.com">suporte.dramasonhos@gmail.com</a>.
+      </p>
+    </section>
 
-O aplicativo não deve ser utilizado em desacordo com os requisitos de idade, as classificações etárias e as regras aplicáveis à plataforma de distribuição. Responsáveis legais podem entrar em contato pelo e-mail de suporte para tratar de dúvidas relacionadas à privacidade.
+    <section>
+      <h2>9. Direitos dos titulares</h2>
+      <p>
+        Nos termos da legislação aplicável, incluindo a Lei Geral de
+        Proteção de Dados Pessoais (LGPD), você pode solicitar, conforme
+        o caso, confirmação do tratamento, acesso, correção, informações
+        sobre compartilhamento, eliminação ou outras providências previstas em lei.
+      </p>
+      <p>
+        Para exercer seus direitos, escreva para
+        <a href="mailto:suporte.dramasonhos@gmail.com">suporte.dramasonhos@gmail.com</a>.
+        Podemos solicitar informações razoáveis para confirmar a titularidade
+        da conta antes de atender à solicitação.
+      </p>
+    </section>
 
-## 11. Alterações desta política
+    <section>
+      <h2>10. Privacidade de crianças e adolescentes</h2>
+      <p>
+        O aplicativo não deve ser utilizado em desacordo com os requisitos
+        de idade, as classificações etárias e as regras aplicáveis à
+        plataforma de distribuição. Responsáveis legais podem entrar em
+        contato pelo e-mail de suporte para tratar de dúvidas relacionadas
+        à privacidade.
+      </p>
+    </section>
 
-Esta política poderá ser atualizada para refletir mudanças no aplicativo, nos serviços utilizados ou nas obrigações legais. A versão vigente será publicada nesta página, acompanhada da data de atualização.
+    <section>
+      <h2>11. Alterações desta política</h2>
+      <p>
+        Esta política poderá ser atualizada para refletir mudanças no
+        aplicativo, nos serviços utilizados ou nas obrigações legais.
+        A versão vigente será publicada nesta página, acompanhada da
+        data de atualização.
+      </p>
+    </section>
 
-## 12. Contato
+    <section>
+      <h2>12. Contato</h2>
+      <div class="contact">
+        <p>Para dúvidas, solicitações relacionadas a dados pessoais ou questões de privacidade:</p>
+        <p><strong>E-mail:</strong>
+          <a href="mailto:suporte.dramasonhos@gmail.com">suporte.dramasonhos@gmail.com</a>
+        </p>
+        <p><strong>Aplicativo:</strong> Dramas Sonhos</p>
+      </div>
+    </section>
+  </main>
 
-Para dúvidas, solicitações relacionadas a dados pessoais ou questões de privacidade:
-
-**E-mail:** suporte.dramasonhos@gmail.com
-
-**Aplicativo:** Dramas Sonhos
+  <footer>
+    © 2026 Dramas Sonhos. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
